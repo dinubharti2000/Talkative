@@ -3,11 +3,11 @@ const app = express()
 port = 3000
 
 app.use(express.static(__dirname));
-app.use(express.static("app"));
+app.use(express.static("public"));
 
 
 app.get('/',(req,res)=>{
-    res.sendFile('./app/home.html',{root:__dirname})
+    res.sendFile('./public/Home.html',{root:__dirname})
 });
 
 app.listen(port,()=>{
