@@ -48,5 +48,29 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    // signup code 
+    document.getElementById('signup').addEventListener('submit',(event)=>{
+        event.preventDefault();
+        let password1 = event.target.signup_password.value.trim();
+        let password2 = event.target.signup_confirm_password.value.trim();
+        let email = event.target.email.value;
+        
+        if(password1 == password2){
+            firebase
+            .auth()
+            .createUserWithEmailAndPassword(email, password1)
+            .then(({user})=>{
+                console.log(user)   
+            }).catch(err=>{
+                alert(err)
+            })
+
+        }
+        else{
+            alert('password dont match')
+        }
+
+    })
+
 
 });

@@ -4,7 +4,7 @@
   "description": "A anonymous chat app",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "nodemon server.js"
   },
   "author": "Dinesh Bharti",
   "license": "ISC",
