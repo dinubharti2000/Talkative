@@ -1,0 +1,21 @@
+{
+  "name": "talkative",
+  "version": "1.0.0",
+  "description": "A anonymous chat app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "Dinesh Bharti",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.11.0",
+    "localtunnel": "^2.0.2",
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.2.0"
+  }
+}

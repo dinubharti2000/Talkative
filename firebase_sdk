@@ -1,0 +1,19 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA_AwgiDcSqGIuo_qo-VhyDAZQTHttemas",
+    authDomain: "talkative-auth.firebaseapp.com",
+    projectId: "talkative-auth",
+    storageBucket: "talkative-auth.appspot.com",
+    messagingSenderId: "67852865807",
+    appId: "1:67852865807:web:d30266b97f770b33ff6e7a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>

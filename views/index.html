@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/1e4911ced7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"
+      defer
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <title>taketive</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form id="login" action="" class="sign-in-form">
+                    <h2 class="title">sign in</h2>
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input id="username" type="text" placeholder="username">
+                    </div>
+                    <div class="textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input id="password" type="password" placeholder="password">
+                    </div>
+                    <a href="#">Forgot password?</a>
+                    <input type="submit" value="login" class="btn">
+                </form>
+
+                <form action="" class="sign-up-form">
+                    <h2 class="title">sign Up</h2>
+                    <div class="textbox">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="textbox">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="textbox">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <input type="number" placeholder="Phone ">
+                    </div>
+                    <div class="textbox">
+                        <i class="fas fa-calendar"></i>
+                            <input type="date" Name="myDate">
+                        
+                    </div>
+                   
+                   <div class="gender">
+                    <!-- <i class="fas fa-venus-mars"></i> -->
+                       <input type="radio" name="mygender" value="male"><i class="fas fa-mars"></i>
+                       <input type="radio" name="mygender" value="female"><i class="fas fa-venus"></i>
+                       <input type="radio" name="mygender" value="female"><i class="fas fa-transgender"></i>
+                   </div>
+                    <div class="textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+                    <div class="textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Confirm password">
+                    </div>
+                    <input type="submit" value="signup" class="btn">
+                </form>
+            </div>
+
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Create account?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+
+                <img class="phone-img" src="/static/images/undraw_Chatting_re_j55r.png">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already have account?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign In</button>
+                </div>
+
+                <img class="phone-img" src="/static/images/undraw_ideas_s70l.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/login_auth.js"></script>
+</body>
+
+</html>
