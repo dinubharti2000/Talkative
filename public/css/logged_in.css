@@ -9,6 +9,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background:url("https://picsum.photos/1920/1080");
+	background-blend-mode: overlay;
+	background-color: rgba(0, 0, 0, 0.418);
 }
 .app {
 	position: fixed;

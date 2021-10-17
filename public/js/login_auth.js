@@ -60,7 +60,8 @@ window.addEventListener("DOMContentLoaded", () => {
             .auth()
             .createUserWithEmailAndPassword(email, password1)
             .then(({user})=>{
-                console.log(user)   
+                alert('user account created') 
+                document.getElementById('sign-in-btn').click();  
             }).catch(err=>{
                 alert(err)
             })

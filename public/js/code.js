@@ -77,4 +77,14 @@
 		messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
 	}
 
+	document.addEventListener('keyup',(event)=>{
+
+		if (event.keyCode === 13) {
+			  event.preventDefault();
+			  
+			  document.getElementById('send-message').click();
+			
+			}
+	})
+
 })();
